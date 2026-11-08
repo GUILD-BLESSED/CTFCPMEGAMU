@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Eventos da ANBU</h1>
+
+        <div class="form-group">
+            <label for="evento">Selecione o Evento:</label>
+            <select id="evento">
+                <option value="CP">CP</option>
+                <option value="CTF">CTF</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-label-special">
+                <input type="checkbox" id="premioDobro">
+                Premiação em Dobro
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>Colocações da Aliança:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="colocacao" value="1"> 1º Lugar</label>
+                <label><input type="checkbox" name="colocacao" value="2"> 2º Lugar</label>
+                <label><input type="checkbox" name="colocacao" value="3"> 3º Lugar</label>
+                <label><input type="checkbox" name="colocacao" value="4"> 4º Lugar</label>
+                <label><input type="checkbox" name="colocacao" value="5"> 5º Lugar</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="jogadores">Número de Jogadores Participantes:</label>
+            <input type="number" id="jogadores" min="1" value="1">
+        </div>
+
+        <button onclick="calcularPagamento()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por FUJIKOFTW, O GOAT DOS DL</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
